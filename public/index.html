@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nodejs Quicklinks</title>
+		
+		<meta charset="utf-8">
+		
+		
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/site.reset.css" />
+		<link rel="stylesheet" href="css/site.global.css" />
+		<link rel="stylesheet" href="css/site.nav.main.css" />
+		<link rel="stylesheet" href="css/site.content.css" />
+
+		
+		<link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" />
+		
+	
+	</head>
+	<body>
+
+
+		<nav id="nav-main">
+
+			
+			<div class="ql-nav-main">
+
+				<div class="ql-nav-main-left">
+					<div class="ql-btn btn-settings">
+						&#xe800;
+					</div>
+				</div>
+
+				<div class="ql-nav-main-right">
+					<div class="ql-btn btn-open-close" data-text-close="&#xf0c9;" data-text-open="&#xe806;">
+						&#xf0c9;
+					</div>
+				</div>
+
+			</div>
+
+
+			<form id="ql-form" name="addquicklink">
+				
+				<input type="text" name="ql_link" placeholder="Link:www.domain.de" />
+				<input type="text" name="ql_name" placeholder="Bezeichnung" />
+				<input type="text" name="ql_tag" placeholder="Kategorie" />
+				<input type="text" name="ql_description"  placeholder="Beschreibung" />
+				
+				<div class="ql-user">
+					<input type="text" list="ql-user-list" name="ql_user" placeholder="User" autocomplete="off" />
+					<datalist id="ql-user-list"></datalist>
+				</div>
+				
+				<div class="ql-submit">
+					<input type="submit" value="Senden" />
+				</div>
+				
+			</form>
+
+
+			<div class="ql-fileuploader">
+				
+				<div class="progress">
+	          		<div class="progress-bar" role="progressbar"></div>
+	            </div>
+
+	            <button class="upload-btn" type="button">
+	            	Hintergrundbild hochladen
+	            </button>
+
+	            <input id="upload-input" type="file" name="uploads[]">
+
+			</div>
+
+
+		</nav>
+		
+		
+		<div class="content-wrap">
+			<div class="content-wrap-inner">
+					
+					
+				<header>
+					<h1>
+						<a href="/">
+							Nodejs Quicklinks
+						</a>
+					</h1>
+				</header>
+
+				
+				<div class="content">
+					<div id="ql-linklist"></div>
+				</div>
+					
+					
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript" src="socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/client.defaults.js"></script>
+		<script type="text/javascript" src="js/client.js"></script>
+		<script type="text/javascript" src="js/client.init.js"></script>
+
+		<!-- https://notifyjs.com/ -->
+		<script type="text/javascript" src="js/notify.min.js"></script>
+
+		<!-- jquery ui -->
+		<script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		
+		<!-- file uploader: https://coligo.io/building-ajax-file-uploader-with-node/ -->
+		<script type="text/javascript" src="js/fileuploader.js"></script>
+ 		
+		
+		
+	</body>
+</html>

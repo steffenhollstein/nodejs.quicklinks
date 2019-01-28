@@ -1,0 +1,170 @@
+/*! 
+	site.content.css
+*/
+
+
+.content-wrap .content-wrap-inner {
+	width:80%;
+	max-width:900px;
+	margin:0 auto;
+	padding:2rem 2rem 2rem 5.688rem;
+}
+.content-wrap .content-wrap-inner .content {
+	border:0.0625rem solid #fff;
+	
+	-moz-box-shadow:0 0 0.125rem rgba(0,0,0,0.15);
+	-webkit-box-shadow:0 0 0.125rem rgba(0,0,0,0.15);
+	box-shadow:0 0 0.125rem 0 rgba(0,0,0,0.15);
+}
+
+
+
+.content-wrap .content-wrap-inner header {
+	padding-bottom:2rem;
+}
+.content-wrap .content-wrap-inner header h1 {
+	display: inline-block;
+	line-height: 1.60rem;
+}
+body.status-customimage .content-wrap .content-wrap-inner header h1 a {
+	text-shadow:0 0 2rem rgba(0,0,0,1);
+	color:rgba(255,255,255,1);
+}
+
+
+
+#ql-linklist {
+	background-color:#fff;
+}
+#ql-linklist:not(.tablist) {
+	padding:2rem;
+	background-color:#f2f2f2;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-header {
+	font-weight:bold;
+	padding-bottom:1rem;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list {
+	padding-left:1rem;
+	padding-bottom:3rem;
+
+	overflow:auto;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list .ql-linklist-content-tag {
+	padding-top:2rem;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a,
+#ql-linklist .ql-linklist-content .ql-linklist-content-list .ui-state-highlight {
+	display:block;
+	position:relative;
+	z-index: 0;
+	text-decoration: none;
+}
+
+ #ql-linklist .ql-linklist-content .ql-linklist-content-list .ui-state-highlight {
+	height: 1.55rem; 
+	line-height: 1.55rem;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a:before,
+#ql-linklist .ql-linklist-content .ql-linklist-content-list .ui-state-highlight:before {
+	content:'>';
+	display:inline-block;
+	position: absolute;
+	left:-1rem;
+	top:0.0625rem;
+	font-size:0.875rem;
+}
+
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a .ql-linklist-content-link-inner {
+	display:inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a .ql-linklist-content-link-inner .button-remove {
+	display:none;
+}
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a:hover .ql-linklist-content-link-inner .button-remove {
+	display:inline-block;
+}
+#ql-linklist .ql-linklist-content .ql-linklist-content-list a .ql-linklist-content-link-inner .button-remove:after {
+	content:'x';
+	display:inline-block;
+	position: absolute;
+	right:-1.5rem;
+	top:50%;
+	z-index: 2;
+	transform: translate(0, -50%);
+
+	cursor: pointer;
+	text-align:center;
+	content:'\e808';
+
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+
+	speak: none;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+	 
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+/* tablist */
+#ql-linklist.tablist .ql-linklist-content:not(.active),
+#ql-linklist.tablist .ql-linklist-content .ql-linklist-content-header {
+	display: none;
+}
+#ql-linklist.tablist .ql-linklist-content {
+	padding:2rem;
+}
+#ql-linklist.tablist .ql-linklist-content .ql-linklist-content-list {
+	padding-bottom:0;
+}
+
+
+#ql-linklist.tablist .ql-tablist {
+	background-color:rgba(0,0,0, 0.050);
+}
+#ql-linklist.tablist .ql-tablist .ql-tablist-label {
+	display: inline-block;
+	cursor: pointer;
+	padding:1rem 2rem;
+	position: relative;
+}
+#ql-linklist.tablist .ql-tablist .ql-tablist-label:after {
+	content:'\00a0';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	height:0.1875rem;
+}
+#ql-linklist.tablist .ql-tablist .ql-tablist-label:hover {
+	background-color:rgba(0,0,0, 0.050);
+	color:inherit;
+}
+
+#ql-linklist.tablist .ql-tablist .ql-tablist-label.active {
+	color:black;
+}
+#ql-linklist.tablist .ql-tablist .ql-tablist-label.active:after {
+	background-color:rgba(0,0,0, 0.125);
+}

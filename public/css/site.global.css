@@ -1,0 +1,227 @@
+/*! 
+	site.global.css
+*/
+
+
+
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello-custom/font/fontello.eot?11400341');
+	src: url('../font/fontello-custom/font/fontello.eot?11400341#iefix') format('embedded-opentype'),
+       url('../font/fontello-custom/font/fontello.woff2?11400341') format('woff2'),
+       url('../font/fontello-custom/font/fontello.woff?11400341') format('woff'),
+       url('../font/fontello-custom/font/fontello.ttf?11400341') format('truetype'),
+       url('../font/fontello-custom/font/fontello.svg?11400341#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+* {
+	color:#444;
+	font-family: 'Raleway', sans-serif, Arial, "Lucida Grande", Tahoma, "Trebuchet MS", Verdana, DejaVu Sans;
+	font-weight:normal;
+}
+
+
+
+h1,
+h1 a,
+h1 a:link,
+h1 a:visited {
+	font-family: 'Raleway', sans-serif;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+
+h1 {
+	font-size:2rem;
+}
+
+
+
+body {
+  background: rgb(252,255,244);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body.status-customimage {
+	background-size: cover;
+}
+
+
+
+/*~~~ clearfix ~~~*/
+header:after,
+.content-wrap .content-wrap-inner:after,
+nav#nav-main .ql-nav-main:after,
+#ql-linklist:after,
+#ql-linklist.tablist .ql-tablist:after,
+#ql-linklist.tablist .ql-linklist-content:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+
+
+
+/*
+	Example - init animation:
+	-----------------------------
+	.selector {
+		-moz-animation: spin 2s infinite linear;
+		-o-animation: spin 2s infinite linear;
+		-webkit-animation: spin 2s infinite linear;
+		animation: spin 2s infinite linear;
+		display: inline-block;
+	}
+*/
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+
+/*
+	init transitions
+*/
+nav#nav-main,
+.content-wrap {
+  transition:width 0.4s ease;
+}
+body.ql-nav-status-open.no-transition nav#nav-main,
+body.ql-nav-status-open.no-transition .content-wrap {
+  transition:none;
+}
+nav#nav-main form#ql-form,
+nav#nav-main .ql-fileuploader,
+nav#nav-main .ql-nav-main .ql-nav-main-left,
+nav#nav-main .ql-nav-main .ql-nav-main-right {
+  transition:opacity 0.2s ease-in-out;
+}
+
+
+/*
+	dimension - default
+*/
+nav#nav-main {
+	width:3.688rem;
+}
+.content-wrap {
+	width:100%;
+	float:right;
+}
+
+
+/*
+	dimension - status open
+*/
+body.ql-nav-status-open .content-wrap {
+	width:80%;
+}
+
+body.ql-nav-status-open nav#nav-main {
+	width:20%;
+}
+
+body.ql-nav-status-open nav#nav-main .ql-nav-main .ql-nav-main-left {
+	opacity:1;
+	width:50%;
+}
+body.ql-nav-status-open nav#nav-main .ql-nav-main .ql-nav-main-right {
+	width:50%;
+}
+body.ql-settings-status-open nav#nav-main .ql-fileuploader,
+body.ql-nav-status-open nav#nav-main form#ql-form {
+  opacity:1;
+  visibility: visible;
+  width:100%;
+}
+body.ql-settings-status-open nav#nav-main .ql-nav-main .ql-btn.btn-settings {
+	color:rgba(40,116,202,0.8);
+}
+
+
+

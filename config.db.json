@@ -1,0 +1,144 @@
+{
+	"database" : {
+		"path" : "./localdatabase",
+		"fileName" : "localdatabase/localdatabase.json",
+		"savingDataInterval" : 5000,
+		"savingDataJsonDefault" : {
+			
+			"users" : {
+				
+				"default" : {
+					"displayName" : "Default",
+					"email" : "",
+					"userSettings" : {
+						"mainNaviOpen" : false,
+						"backgroundImage" : null
+					},
+					"links" : [
+						{
+							"name" : "steffenhollstein.de", 
+							"link" : "http://www.steffenhollstein.de", 
+							"description" : "Steffen Hollstein", 
+							"tag" : ""
+						}, {
+							"name" : "opensource.steffenhollstein.de", 
+							"link" : "http://opensource.steffenhollstein.de", 
+							"description" : "Open Source Projekte", 
+							"tag" : ""
+						}, 
+
+
+						{
+							"name" : "speedport.ip", 
+							"link" : "http://speedport.ip", 
+							"description" : "", 
+							"tag" : "NAS, Router, Webhoster"
+						}, {
+							"name" : "Synology NAS", 
+							"link" : "https://192.168.178.24:5001/", 
+							"description" : "", 
+							"tag" : "NAS, Router, Webhoster"
+						}, {
+							"name" : "Synology NAS, Wordpress - die.maler", 
+							"link" : "http://192.168.178.24:4445/", 
+							"description" : "", 
+							"tag" : "NAS, Router, Webhoster"
+						}, {
+							"name" : "psa2.webhoster.ag", 
+							"link" : "https://psa2.webhoster.ag:8443", 
+							"description" : "", 
+							"tag" : "NAS, Router, Webhoster"
+						}, 
+
+
+						{
+							"name" : "XVM Nightly Build", 
+							"link" : "http://nightly.modxvm.com/", 
+							"description" : "", 
+							"tag" : "World of Tanks"
+						}, {
+							"name" : "tanks.gg", 
+							"link" : "http://tanks.gg", 
+							"description" : "Tanks compare", 
+							"tag" : "World of Tanks"
+						}, 
+
+
+						{
+							"name" : "REM Calculator", 
+							"link" : "https://offroadcode.com/rem-calculator", 
+							"description" : "", 
+							"tag" : "CSS"
+						}, {
+							"name" : "Gradient Generator | colorzilla", 
+							"link" : "http://www.colorzilla.com/gradient-editor/", 
+							"description" : "", 
+							"tag" : "CSS"
+						}, 
+
+
+						{
+							"name" : "Module Exports", 
+							"link" : "http://www.tutorialsteacher.com/nodejs/nodejs-module-exports", 
+							"description" : "", 
+							"tag" : "NodeJS"
+						}, {
+							"name" : "Module Patterns", 
+							"link" : "https://darrenderidder.github.io/talks/ModulePatterns/#/8", 
+							"description" : "", 
+							"tag" : "NodeJS"
+						}, 
+
+
+						{
+							"name" : "soundcloud.com", 
+							"link" : "https://soundcloud.com/", 
+							"description" : "", 
+							"tag" : "Music"
+						}, {
+							"name" : "pure.fm", 
+							"link" : "http://pure.fm/", 
+							"description" : "", 
+							"tag" : "Music"
+						}
+					]
+				},
+
+				"testuser" : {
+					"displayName" : "Test User",
+					"email" : "testuser@domain.de",
+					"userSettings" : {
+						"mainNaviOpen" : false,
+						"backgroundImage" : null
+					},
+					"links" : [
+						{
+							"name" : "default.de", 
+							"link" : "http://www.default.de", 
+							"description" : "", 
+							"tag" : ""
+						}
+					]
+				},
+
+				"anonymus" : {
+					"displayName" : "Anonymus",
+					"email" : "anonymus@domain.de",
+					"userSettings" : {
+						"mainNaviOpen" : false,
+						"backgroundImage" : null
+					},
+					"links" : [
+						{
+							"name" : "fasel.de", 
+							"link" : "http://www.fasel.de", 
+							"description" : "", 
+							"tag" : ""
+						}
+					]
+				}
+			}
+		}
+		
+	}
+}

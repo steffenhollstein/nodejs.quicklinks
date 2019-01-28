@@ -1,0 +1,38 @@
+{
+	"ip" : "localhost",
+	"port" : "8000",
+
+	"publicPath" : "/public",
+	"publicStartPage" : "/index.html",
+
+
+	"fileUploader" : {
+		"allowMultiples" : false,
+		"path" : "/img/fileupload",
+		"pathRelative" : "img/fileupload",
+		"pathTemp" : "/upload"
+	},
+	
+	
+	"log" : {
+		"fileNameError" : "logs/error.log",
+		"fileNameDebug" : "logs/debug.log",
+		"fileNameSocket" : "logs/socketio.log",
+		"maxLogSize" : 200480,
+		"backups" : 3
+	},
+	
+	"localizationStrings" : {
+		"error" : {
+			"emptyLink" : "Bitte geben Sie einen Link ein.",
+			"linkWrongMovement" : "Der Link kann hier nicht verschoben werden",
+			"linkAlreadyInUse" : "Link existiert schon",
+			"linkNotValid" : "Dieser Link ist falsch angegeben. Beispiel: http://www.meineseite.de",
+			"noDescriptionAvailable" : "Keine Beschreibung angegeben."
+		},
+		"status" : {
+			"clientConnected" : "Du bist nun mit dem Server verbunden!", 
+			"removeLinkSuccess" : "Link erfolgreich gelöscht"
+		}
+	}
+}

@@ -1,0 +1,136 @@
+/*! 
+	site.reset.css
+*/
+
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, 
+em, font, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, 
+dd, ol, ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, input, textarea, .reset,
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, button {
+	background:transparent;
+	
+	margin:0;
+	outline:0;
+	padding:0;
+	border:0;
+	vertical-align:baseline;
+	font-size:1em;
+	
+	/* Reset boxmodel to border-box */
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section,
+audio, canvas, video {
+	display:block;
+}
+
+
+
+html {
+	height:100%;
+	-webkit-text-size-adjust:100%; 
+	-ms-text-size-adjust:100%;
+}
+
+body {
+	font-size:100%;
+}
+
+
+a:link, 
+a:visited {
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+:focus {
+	outline:0;
+}
+:hover {
+	-webkit-transition:background-position 0.1s linear;
+	-moz-transition:background-position 0.1s linear;
+	-o-transition:background-position 0.1s linear;
+	transition:background-position 0.1s linear;
+}
+
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+	word-wrap:break-word;
+}
+
+
+ol, 
+ul {
+	list-style:none;
+}
+
+blockquote, 
+q {
+	quotes:none;
+}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content:'';
+	content:none;
+}
+
+ins {
+	text-decoration:none;
+}
+
+del {
+	text-decoration:line-through;
+}
+
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:none;
+}
+table td {
+	vertical-align:top;
+}
+table th {
+	text-align:left;
+}
+
+
+code {
+	font-family:'Courier New',Courier,Fixed;
+}
+
+acronym, 
+abbr, 
+span.caps {
+	cursor:help;
+}
+
+textarea {
+	resize:vertical;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Nodejs-Quicklinks",
+  "version": "1.0.0",
+  "description": "Quicklinks",
+  "author": {
+    "name": "Steffen Hollstein",
+    "email": "sh@steffenhollstein.de"
+  },
+  "engines": {
+    "node": ">= 9.x",
+    "npm": ">= 4.x"
+  },
+  "dependencies": {
+    "express": "4.x",
+    "socket.io": ">= 1.0.0",
+    "log4js": ">= 1.1.1",
+    "formidable": "^1.0.17"
+  },
+  "devDependencies": {},
+  "productionDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
