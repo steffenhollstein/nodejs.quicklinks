@@ -55,7 +55,7 @@ server.listen(conf.port, function(){
 	var port = server.address().port
 	
 	require('dns').lookup(require('os').hostname(), function (err, add, fam) {
-        logDebug.info('App is listening at http://%s:%s', add, port);
+        //console.info('App is listening at http://%s:%s', add, port);
     });
 
 
