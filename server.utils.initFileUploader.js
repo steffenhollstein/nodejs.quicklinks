@@ -7,9 +7,9 @@
 	-----------------------------
 	var utilsFileUploader = require('./server.utils.initFileUploader.js');
 
-	utilsFileUploader(app, path, fs, formidable, conf, logError, logDebug, logSocket);
+	utilsFileUploader(app, path, fs, formidable, conf);
 */
-module.exports = function(app, path, fs, formidable, conf, logError, logDebug, logSocket){
+module.exports = function(app, path, fs, formidable, conf){
 			
 			
 	app.post(conf.fileUploader.pathTemp, function(req, res){
@@ -39,7 +39,7 @@ module.exports = function(app, path, fs, formidable, conf, logError, logDebug, l
 
 		// log any errors that occur
 		form.on('error', function(err) {
-			logError.error('File Uploader. An error has occured: \n' + err);
+			//console.error('File Uploader. An error has occured: \n' + err);
 		});
 
 
