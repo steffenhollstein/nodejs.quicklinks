@@ -8,14 +8,14 @@
 	var getFolderData = require('./server.utils.getFolderData.js');
 
 	var testData = getFolderData(
-		fs, path, logDebug, confDB.database.path
+		fs, path, confDB.database.path
 	);
 
 	logDebug.info(
 		"testData: ", testData
 	);
 */
-module.exports = function(fs, path, logDebug, currentPath){
+module.exports = function(fs, path, currentPath){
 	
 	
 	var returnData = [];
@@ -25,9 +25,9 @@ module.exports = function(fs, path, logDebug, currentPath){
 		    
 	    if (err) 
 	    {
-	    	logDebug.error(
+	    	/*console.error(
 				err
-			);
+			);*/
 
 	        throw err;
 	    }
@@ -42,15 +42,13 @@ module.exports = function(fs, path, logDebug, currentPath){
 
 	    }).forEach(function (file) {
 
-	        //logDebug.info("%s (%s)", file, path.extname(file));
-
 	        fs.readFileSync(file, 'utf8', function(err,filedata){
 		
 				if( err )
 				{
-					logDebug.error(
+					/*console.error(
 						"local file <" + file + "> could not be loaded."
-					);
+					);*/
 				} 
 				else if( filedata.length > 0 )
 				{
