@@ -1,6 +1,6 @@
 {
 	"ip" : "localhost",
-	"port" : "8000",
+	"port" : "80",
 
 	"publicPath" : "/public",
 	"publicStartPage" : "/index.html",
