@@ -12,13 +12,10 @@
 		conf, 
 		confDB, 
 		fs, 
-		path, 
-		logError, 
-		logDebug, 
-		logSocket
+		path
 	);
 */
-module.exports = function(express, app, io, conf, confDB, fs, path, logError, logDebug, logSocket){
+module.exports = function(express, app, io, conf, confDB, fs, path){
 
 
 	
@@ -224,9 +221,9 @@ module.exports = function(express, app, io, conf, confDB, fs, path, logError, lo
 				
 				if( err )
 				{
-					logDebug.info(
+					/*console.info(
 						"local file <" + confDB.database.fileName + "> doesn't exist. creating a new file."
-					);
+					);*/
 					
 					// Daten initial in JSON-Datei schreiben
 					methods.dbUpdate(
@@ -235,9 +232,9 @@ module.exports = function(express, app, io, conf, confDB, fs, path, logError, lo
 				} 
 				else if( filedata.length > 0 )
 				{
-					logDebug.info(
+					/*console.info(
 						"init() success. File data pushed to databaseTempJSON"
-					);
+					);*/
 
 					methods.globalOptions.databaseTempJSON = JSON.parse(filedata);
 				}
@@ -267,9 +264,9 @@ module.exports = function(express, app, io, conf, confDB, fs, path, logError, lo
 				{
 					methods.globalOptions.dbIntervalSavingCounter = 1;
 					
-					logDebug.info(
+					/*console.info(
 						'temp data saved (every ' + confDB.database.savingDataInterval + ' ms) to file (' + confDB.database.fileName + ')'
-					);
+					);*/
 				}
 				
 			}, confDB.database.savingDataInterval );
@@ -284,9 +281,9 @@ module.exports = function(express, app, io, conf, confDB, fs, path, logError, lo
 			fs.writeFileSync(confDB.database.fileName, JSON.stringify(data), function(err){
 				
 				if( err ){
-					logError.error(err);
+					//console.error(err);
 				} else {
-					logDebug.info("JSON file updated");
+					//console.info("JSON file updated");
 				}
 				
 			});
