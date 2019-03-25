@@ -1,6 +1,6 @@
 {
   "name": "Nodejs-Quicklinks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quicklinks",
   "author": {
     "name": "Steffen Hollstein",
@@ -13,7 +13,6 @@
   "dependencies": {
     "express": "4.x",
     "socket.io": ">= 1.0.0",
-    "log4js": ">= 1.1.1",
     "formidable": "^1.0.17"
   },
   "devDependencies": {},
