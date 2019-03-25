@@ -7,16 +7,8 @@ const io 		= require('socket.io').listen(server);
 const conf 		= require('./config.json');
 const confDB 	= require('./config.db.json');
 const fs      	= require('fs');
-const log4js 	= require('log4js');
 const path 		= require("path");
 const formidable = require('formidable');
-
-
-var utilsLogger = require('./server.utils.log4js.js'),
-	utilsLoggerTypes = utilsLogger(conf, log4js, io),
-	logError = utilsLoggerTypes.lggE, 
-	logDebug = utilsLoggerTypes.lggD, 
-	logSocket = utilsLoggerTypes.lggS;
 
 
 conf.ip = process.env.IP || conf.ip;
@@ -35,7 +27,7 @@ server.listen(conf.port, function(){
 	*/
 	var utilsInit = require('./server.utils.js');
 
-	utilsInit(express, app, io, conf, confDB, fs, path, logError, logDebug, logSocket);
+	utilsInit(express, app, io, conf, confDB, fs, path);
 
 
 	
@@ -53,7 +45,7 @@ server.listen(conf.port, function(){
 	*/
 	var utilsFileUploader = require('./server.utils.initFileUploader.js');
 
-	utilsFileUploader(app, path, fs, formidable, conf, logError, logDebug, logSocket);
+	utilsFileUploader(app, path, fs, formidable, conf);
  
 
 
